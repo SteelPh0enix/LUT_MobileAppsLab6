@@ -20,10 +20,20 @@
         android:id="@+id/button_third"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/return_to_start"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/next"
+        app:layout_constraintBottom_toTopOf="@+id/button_prev_third"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textview_third" />
+
+    <Button
+        android:id="@+id/button_prev_third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/previous"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_third" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

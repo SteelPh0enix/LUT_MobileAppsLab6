@@ -34,5 +34,9 @@ class ThirdFragment : Fragment() {
         view.findViewById<Button>(R.id.button_third).setOnClickListener {
             findNavController().navigate(R.id.action_ThirdFragment_to_FirstFragment)
         }
+
+        view.findViewById<Button>(R.id.button_prev_third).setOnClickListener {
+            findNavController().navigate(R.id.action_ThirdFragment_to_SecondFragment)
+        }
     }
 }
